@@ -20,3 +20,5 @@ print("1. Maximum push-ups: \(gfPhysicalFitness.pushupsMax)")
 print("2. Maximum pull-ups: \(gfPhysicalFitness.1)")
 print("3. Maximum squats: \(gfPhysicalFitness.squatsMax)")
 print("\n\n")
+
+// Вторую часть как делать не понял, поэтому заканчиваю с этой лекцией
