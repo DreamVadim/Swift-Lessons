@@ -26,16 +26,18 @@ print(); print()
 
 // ЗАДАНИЕ 2 - Сложение и сравнивание сумма разных числовых типов
 
-let firstValue: Int     = 40
-let secondValue: Float  = 20.5
-let thirdValue: Double  = -10.125
+let a = 40
+let b: Float = 20.5
+let c = -10.125
 
-let firstSum: Int       = firstValue + Int(secondValue) + Int(thirdValue)
-let secondSum: Float    = Float(firstValue) + secondValue + Float(thirdValue)
-let thirdSum: Double    = Double(firstValue) + Double(secondValue) + thirdValue
+let sumInt      = a + Int(Double(b) + c)
+let sumFloat    = Float(a) + b + Float(c)
+let sumDouble   = Double(a) + Double(b) + c
 
-if Double(firstSum) > thirdSum {
-    print("Сумма 3-х значений в Int типе больше")
+if Double(sumInt) < sumDouble {
+    print("Double is greater")
+} else if Double(sumInt) == sumDouble {
+    print("Double and Int is equal")
 } else {
-    print("Сумма 3-х значений в Double типе больше")
+    print("Int is greater")
 }
